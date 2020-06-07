@@ -10,7 +10,7 @@ oc new-app java:8~https://github.com/rh-mercury/mercury-sd-camel --context-dir s
 
 
 ```
-oc expose svc/sd-product-deployment
+oc expose svc/sd-product-directory
 ```
 
 Swagger can be found at: ```{URL}/swagger-ui```
