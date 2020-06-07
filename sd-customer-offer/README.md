@@ -3,6 +3,9 @@
 oc new-app java:8~https://github.com/rh-mercury/mercury-sd-camel --context-dir sd-customer-offer --name=sd-customer-offer 
 --build-env=NEXUSREPO="<nexus-repo-url>" --build-env=AB_JOLOKIA_OFF=true
 -eoc.project.path=<path to service>
+-eeligibility.url=<eligibility_url>
+-edirectory.url=<directory_url>
+-edeployment.url=<deployment_url>
 ```
 Build environment will need to be passed in with the URL for the nexus repo.
 
