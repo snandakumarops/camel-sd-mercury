@@ -18,7 +18,7 @@
                 <repository>
                     <id>maven-releases</id>
                     <name>maven-releases</name>
-                    <url>${env.NEXUSREPO}</url>
+                    <url>http://nexus-nexus.apps.cluster-2d1a.green.osp.opentlc.com/repository/maven-releases/</url>
                 </repository>
             </repositories>
 
@@ -40,7 +40,7 @@
           </executions>
           <configuration>
               <serverId>nexus</serverId>
-              <nexusUrl>http://nexus-nexus.apps.cluster-cc6c.cc6c.example.opentlc.com/repository/maven-releases/</nexusUrl>
+              <nexusUrl>http://nexus-nexus.apps.cluster-2d1a.green.osp.opentlc.com/repository/maven-releases/</nexusUrl>
               <skipStaging>true</skipStaging>
           </configuration>
       </plugin>
@@ -52,7 +52,7 @@
         <repository>
             <id>maven-releases</id>
             <name>maven-releases</name>
-            <url>http://nexus-nexus.apps.cluster-cc6c.cc6c.example.opentlc.com/repository/maven-releases/</url>
+            <url>http://nexus-nexus.apps.cluster-2d1a.green.osp.opentlc.com/repository/maven-releases/</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
