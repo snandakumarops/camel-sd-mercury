@@ -27,6 +27,16 @@
         <scope>import</scope>
       </dependency>
 
+      <dependency>
+        <groupId>com.redhat.ba</groupId>
+        <artifactId>ba-platform-bom</artifactId>
+        <version>7.5.1.redhat-00001</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
+
+
     </dependencies>
   </dependencyManagement>
 
@@ -63,6 +73,13 @@
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-stream</artifactId>
+
+    </dependency>
+
+    <dependency>
+      <groupId>com.myspace</groupId>
+      <artifactId>ProductEligibilityDMN</artifactId>
+      <version>1.0.0</version>
 
     </dependency>
 
@@ -115,7 +132,45 @@
     </dependency>
 
 
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-dmn-core</artifactId>
 
+    </dependency>
+
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-dmn-api</artifactId>
+
+
+    </dependency>
+
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-dmn-jpmml</artifactId>
+      <version>7.27.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-core</artifactId>
+
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.jpmml</groupId>
+      <artifactId>pmml-evaluator</artifactId>
+      <version>1.4.9</version>
+
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jpmml/pmml-evaluator-extension -->
+    <dependency>
+      <groupId>org.jpmml</groupId>
+      <artifactId>pmml-evaluator-extension</artifactId>
+      <version>1.4.9</version>
+
+    </dependency>
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
