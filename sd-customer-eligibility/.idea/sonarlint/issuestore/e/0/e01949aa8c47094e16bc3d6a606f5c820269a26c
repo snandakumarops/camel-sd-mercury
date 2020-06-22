@@ -1,19 +1,19 @@
 
+|squid:UselessImportCheck	"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ
+€squid:S1488@"dImmediately return this expression instead of assigning it to the temporary variable "resultString".(§­å¨ûÿÿÿÿ
 Lsquid:S1068"0Remove this unused "kieContainer" private field.(žÞ­£ýÿÿÿÿ
+Zsquid:S1854">Remove this useless assignment to local variable "resultJson".(åÜî¢ýÿÿÿÿ
+T
+squid:S106T"9Replace this use of System.out or System.err by a logger.(þÛ¨þÿÿÿÿ
+?squid:S1148L"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+Isquid:S1172"-Remove this unused method parameter "custId".(¿áƒÁþÿÿÿÿ
+gsquid:UselessImportCheck
+"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú
+Ksquid:S1481"/Remove this unused "resultJson" local variable.(åÜî¢ýÿÿÿÿ
 wsquid:S1450"[Remove the "kieContainer" field and declare it as a local variable in the relevant methods.(žÞ­£ýÿÿÿÿ
+T
+squid:S1061"9Replace this use of System.out or System.err by a logger.(Ì”Ö™ÿÿÿÿÿ
 O
 squid:S106"9Replace this use of System.out or System.err by a logger.(¨Œ
 T
-squid:S1061"9Replace this use of System.out or System.err by a logger.(ûø’Æýÿÿÿÿ
-T
-squid:S106T"9Replace this use of System.out or System.err by a logger.(þÛ¨þÿÿÿÿ
-T
 squid:S106}"9Replace this use of System.out or System.err by a logger.(«çÆéüÿÿÿÿ
-€squid:S1488@"dImmediately return this expression instead of assigning it to the temporary variable "resultString".(§­å¨ûÿÿÿÿ
-Ksquid:S1481"/Remove this unused "resultJson" local variable.(åÜî¢ýÿÿÿÿ
-Isquid:S1172"-Remove this unused method parameter "custId".(¿áƒÁþÿÿÿÿ
-Zsquid:S1854">Remove this useless assignment to local variable "resultJson".(åÜî¢ýÿÿÿÿ
-gsquid:UselessImportCheck
-"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú
-|squid:UselessImportCheck	"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ
-?squid:S1148L"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
