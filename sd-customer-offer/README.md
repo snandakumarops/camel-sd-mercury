@@ -17,6 +17,7 @@ Swagger can be found at: ```{URL}/swagger-ui```
 
 Sample Request for Initiate Offer
 ```
+{
 "data": {
 		"customerOfferProcedureInitiateActionRecord": {},
 		"customerOfferProcedureInstanceRecord": {
