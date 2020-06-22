@@ -151,11 +151,6 @@
       <version>7.27.0.Final</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-core</artifactId>
-        <version>7.27.0.Final</version>
-    </dependency>
 
 
     <dependency>
