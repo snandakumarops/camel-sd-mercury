@@ -46,7 +46,7 @@ public class TransformerBean {
 
             DMNResult dmnResult = dmnRuntime.evaluateAll(dmnModel, dmnContext);
 
-            System.out.println(new Gson().toJson(dmnResult));
+            System.out.println(new Gson().toJson(dmnResult.getDecisionResults()));
 
             DMNDecisionResult resultOffer = dmnResult.getDecisionResultByName("Product Eligibility");
             boolean resultOfferPayload = (boolean)resultOffer.getResult();

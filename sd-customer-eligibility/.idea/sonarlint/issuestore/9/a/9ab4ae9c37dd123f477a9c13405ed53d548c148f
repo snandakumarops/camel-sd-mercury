@@ -1,0 +1,14 @@
+
+squid:S1192¨"pDefine a constant instead of duplicating this literal "Customer Eligibility Assessment Request Payload" 5 times.(“€–§ıÿÿÿÿ
+nsquid:S1192"QDefine a constant instead of duplicating this literal "cr-reference-id" 10 times.( ×ãêøÿÿÿÿ
+˜squid:S1192L"€Define a constant instead of duplicating this literal "SDCustomerProductServiceEligibility Servicing Session Reference" 3 times.(ìÔ‰Õ
+›squid:S1192†"‚Define a constant instead of duplicating this literal "Customer Product Service Eligibility Servicing Session Reference" 12 times.(ªõˆ€
+hsquid:S1192u"LDefine a constant instead of duplicating this literal "queryparams" 4 times.(ùœË•úÿÿÿÿ
+_squid:S1192J"HDefine a constant instead of duplicating this literal "string" 35 times.(ü–›Í
+isquid:S1192:"RDefine a constant instead of duplicating this literal "application/json" 17 times.(ò©ğà
+msquid:S1192Â"PDefine a constant instead of duplicating this literal "bq-reference-id" 3 times.(İê ıÿÿÿÿ
+hsquid:S1192H"QDefine a constant instead of duplicating this literal "sd-reference-id" 15 times.(¹¾°˜
+‘squid:S1192¢"tDefine a constant instead of duplicating this literal "Customer Eligibility Assessment Instance Reference" 10 times.(„Ìª×ùÿÿÿÿ
+Zsquid:UselessImportCheck"1Remove this unused import 'java.net.InetAddress'.(ë³ƒÒÿÿÿÿÿ
+}squid:UselessImportCheck	"TRemove this unused import 'org.apache.camel.model.rest.RestConfigurationDefinition'.(Œ´¼×şÿÿÿÿ
+Zsquid:UselessImportCheck"6Remove this unused import 'io.swagger.models.auth.In'.(å£Ùó
