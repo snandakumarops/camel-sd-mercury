@@ -56,7 +56,7 @@ public class TransformerBean {
             DMNDecisionResult creditRatingCheck = dmnResult.getDecisionResultByName("Credit Rating Check");
             boolean creditRatingCheckPayload = (boolean)creditRatingCheck.getResult();
             DMNDecisionResult riskCheck = dmnResult.getDecisionResultByName("Risk Checks");
-            boolean riskCheckPayload = (boolean)riskCheck.getResult();
+            boolean riskCheckPayload =((int)riskCheck.getResult() > 3);
 
 
 
