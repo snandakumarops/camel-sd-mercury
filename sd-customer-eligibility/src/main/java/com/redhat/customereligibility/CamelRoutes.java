@@ -47,7 +47,7 @@ public final class CamelRoutes extends RouteBuilder {
 
                 .contextPath("/service")
                 .port(8080)
-                .hostNameResolver(RestHostNameResolver.localHostName)
+                .hostNameResolver(RestHostNameResolver.allLocalIp)
                 .apiProperty("api.title", "Example REST api")
                 .apiProperty("api.version", "1.0")
         ;
