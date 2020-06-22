@@ -46,7 +46,7 @@ public final class CamelRoutes extends RouteBuilder {
                 .apiContextRouteId("swagger") //id of route providing the swagger endpoint
 
                 .contextPath("/service")
-
+                .port(8080)
                 .hostNameResolver(RestHostNameResolver.localIp)
                 .apiProperty("api.title", "Example REST api")
                 .apiProperty("api.version", "1.0")
