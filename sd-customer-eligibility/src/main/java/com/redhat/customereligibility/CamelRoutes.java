@@ -7,7 +7,6 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.servlet.CamelHttpTransportServlet;
 import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.camel.model.rest.RestConfigurationDefinition;
-import org.apache.camel.model.rest.RestHostNameResolver;
 import org.apache.camel.model.rest.RestParamType;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -46,8 +45,8 @@ public final class CamelRoutes extends RouteBuilder {
                 .apiContextRouteId("swagger") //id of route providing the swagger endpoint
 
                 .contextPath("/service")
-                .port(8080)
-                .hostNameResolver(RestHostNameResolver.allLocalIp)
+
+                .host(projectPath)
                 .apiProperty("api.title", "Example REST api")
                 .apiProperty("api.version", "1.0")
         ;
