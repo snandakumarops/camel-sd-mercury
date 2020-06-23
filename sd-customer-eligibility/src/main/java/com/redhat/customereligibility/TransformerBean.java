@@ -9,6 +9,7 @@ import org.kie.dmn.api.core.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.Map;
@@ -23,17 +24,12 @@ public class TransformerBean {
         try {
             KieServices kieServices = KieServices.Factory.get();
             kieContainer = kieServices.newKieClasspathContainer();
-
             DMNRuntime dmnRuntime = RuleSessionFactory.createDMNRuntime();
-            System.out.println(dmnRuntime);
             String namespace = "https://kiegroup.org/dmn/_03A4B62B-BA02-43B4-B776-34B0D7DA117C";
             String modelName = "ProductEligibilityDMN";
-
             DMNModel dmnModel = dmnRuntime.getModel(namespace, modelName);
             DMNContext dmnContext = dmnRuntime.newContext();
-
             //Customer Data Lookup, Mock data setup for test
-
             dmnContext.set("KYC Check",true);
             dmnContext.set("Member Since",2018);
             dmnContext.set("Last Transaction Date",LocalDate.now());
@@ -43,20 +39,16 @@ public class TransformerBean {
             dmnContext.set("Customer Age",34);
             dmnContext.set("Delinquency History",1);
             dmnContext.set("Product",product);
-
             DMNResult dmnResult = dmnRuntime.evaluateAll(dmnModel, dmnContext);
-
-            System.out.println(new Gson().toJson(dmnResult.getDecisionResults()));
-
             DMNDecisionResult resultOffer = dmnResult.getDecisionResultByName("Product Eligibility");
             boolean resultOfferPayload = (boolean)resultOffer.getResult();
             DMNDecisionResult dueDiligence = dmnResult.getDecisionResultByName("Due Diligence");
             boolean dueDiligencePayload = (boolean)dueDiligence.getResult();
-
             DMNDecisionResult creditRatingCheck = dmnResult.getDecisionResultByName("Credit Rating Check");
             boolean creditRatingCheckPayload = (boolean)creditRatingCheck.getResult();
             DMNDecisionResult riskCheck = dmnResult.getDecisionResultByName("Risk Checks");
-            boolean riskCheckPayload =((int)riskCheck.getResult() < 3);
+            BigDecimal bigDecimal = (BigDecimal) riskCheck.getResult();
+            boolean riskCheckPayload =bigDecimal.compareTo(BigDecimal.valueOf(3)) < 0;
 
 
 
